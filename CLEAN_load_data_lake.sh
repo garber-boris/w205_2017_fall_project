@@ -10,11 +10,11 @@ hdfs dfs -rm /user/w205/project/stop_times/stop_times.txt
 hdfs dfs -rm /user/w205/project/trips/trips.txt
 
 # remove hdfs directory
-hdfs dfs -rm /user/w205/project/routes
-hdfs dfs -rm /user/w205/project/stops
-hdfs dfs -rm /user/w205/project/stop_times
-hdfs dfs -rm /user/w205/project/trips
-hdfs dfs -rm /user/w205/project
+hdfs dfs -rmdir /user/w205/project/routes
+hdfs dfs -rmdir /user/w205/project/stops
+hdfs dfs -rmdir /user/w205/project/stop_times
+hdfs dfs -rmdir /user/w205/project/trips
+hdfs dfs -rmdir /user/w205/project
 
 # change back to original directory
 cd $MY_CWD

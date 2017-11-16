@@ -1,4 +1,4 @@
-DROP TABLE routes
+DROP TABLE routes;
 
 CREATE EXTERNAL TABLE routes
 (

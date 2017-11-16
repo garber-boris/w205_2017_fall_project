@@ -6,23 +6,27 @@ MY_CWD=$(pwd)
 # create hdfs directory and copy
 hdfs dfs -mkdir /user/w205/project
 
-FILE="routes.txt"
-tail -n +1 "$FILE" > $FILE
+OLD_FILE="routes.txt"
+FILE="routes_clean.txt"
+tail -n +2 "$OLD_FILE" > $FILE
 hdfs dfs -mkdir /user/w205/project/routes
 hdfs dfs -put $FILE /user/w205/project/routes
 
-FILE="stops.txt"
-tail -n +1 "$FILE" > $FILE
+OLD_FILE="stops.txt"
+FILE="stops_clean.txt"
+tail -n +2 "$OLD_FILE" > $FILE
 hdfs dfs -mkdir /user/w205/project/stops
 hdfs dfs -put $FILE /user/w205/project/stops
 
-FILE="stop_times.txt"
-tail -n +1 "$FILE" > $FILE
+OLD_FILE="stop_times.txt"
+FILE="stop_times_clean.txt"
+tail -n +2 "$OLD_FILE" > $FILE
 hdfs dfs -mkdir /user/w205/project/stop_times
 hdfs dfs -put $FILE /user/w205/project/stop_times
 
-FILE="trips.txt"
-tail -n +1 "$FILE" > $FILE
+OLD_FILE="trips.txt"
+FILE="trips_clean.txt"
+tail -n +2 "$OLD_FILE" > $FILE
 hdfs dfs -mkdir /user/w205/project/trips
 hdfs dfs -put $FILE /user/w205/project/trips
 

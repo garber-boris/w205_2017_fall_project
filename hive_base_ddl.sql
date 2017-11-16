@@ -19,7 +19,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/project/routes'
+LOCATION '/user/w205/project/routes_clean'
 ;
 
 DROP TABLE stops;
@@ -44,7 +44,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/project/stops'
+LOCATION '/user/w205/project/stops_clean'
 ;
 
 DROP TABLE stop_times;
@@ -68,7 +68,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/project/stop_times'
+LOCATION '/user/w205/project/stop_times_clean'
 ;
 
 DROP TABLE trips;
@@ -90,5 +90,5 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/project/trips'
+LOCATION '/user/w205/project/trips_clean'
 ;
